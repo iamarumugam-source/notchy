@@ -23,7 +23,7 @@ struct NotchPopup: View {
                 
                 Spacer() // balances the left and right .font(.system(size: 11, weight: .medium, design: .monospaced))
                 
-            }
+            }.padding(.top)
 
             Divider()
 
@@ -51,6 +51,7 @@ struct NotchPopup: View {
             VStack {
                 
                 Text("SYSTEM STATUS").font(.system(size: 10, weight: .bold, design: .monospaced))
+                
                 Divider()
                 
                 HStack {
@@ -93,7 +94,7 @@ struct NotchPopup: View {
 //        .padding()// expanded content
         .background(Color.black.opacity(0.95))
         .shadow(radius: 6)
-        .frame(minWidth: 300)
+        .frame(minWidth: 340)
     }
 }
 
