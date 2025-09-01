@@ -37,9 +37,10 @@ struct NotchPopup: View {
                 
                 HStack {
                     Image(systemName: "list.clipboard").foregroundStyle(.orange).imageScale(.medium)
+                        .padding(.leading)
                     Text("Clipboard").font(.system(size: 10, weight: .regular, design: .monospaced))
                     Spacer()
-                    NotchClipboardSummaryView()
+                    NotchClipboardSummaryView().padding(.trailing)
                 }
                 
             }

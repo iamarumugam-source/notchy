@@ -18,6 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Initialize systems
         notchController = NotchController()
         hotKeyManager = HotKeyManager(notchController: notchController)
+        showNetworkStatus()
 
         _ = ClipboardManager.shared
     }
