@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DCA5268E2E6415BE00580045 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = DCA5268D2E6415BE00580045 /* HotKey */; };
+		DCA526942E6429C300580045 /* DynamicNotchKit in Frameworks */ = {isa = PBXBuildFile; productRef = DCA526932E6429C300580045 /* DynamicNotchKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DCA5266D2E6303C200580045 /* notchy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notchy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA526942E6429C300580045 /* DynamicNotchKit in Frameworks */,
+				DCA5268E2E6415BE00580045 /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = notchy;
 			packageProductDependencies = (
+				DCA5268D2E6415BE00580045 /* HotKey */,
+				DCA526932E6429C300580045 /* DynamicNotchKit */,
 			);
 			productName = notchy;
 			productReference = DCA5266D2E6303C200580045 /* notchy.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = DCA526642E6303C200580045;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DCA5268C2E6415BE00580045 /* XCRemoteSwiftPackageReference "HotKey" */,
+				DCA526922E6429C300580045 /* XCRemoteSwiftPackageReference "DynamicNotchKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DCA5266E2E6303C200580045 /* Products */;
 			projectDirPath = "";
@@ -249,11 +262,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = notchy/notchy.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DHYDWRPQR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -274,11 +291,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = notchy/notchy.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DHYDWRPQR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +336,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCA5268C2E6415BE00580045 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DCA526922E6429C300580045 /* XCRemoteSwiftPackageReference "DynamicNotchKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MrKai77/DynamicNotchKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCA5268D2E6415BE00580045 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCA5268C2E6415BE00580045 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+		DCA526932E6429C300580045 /* DynamicNotchKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCA526922E6429C300580045 /* XCRemoteSwiftPackageReference "DynamicNotchKit" */;
+			productName = DynamicNotchKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCA526652E6303C200580045 /* Project object */;
 }

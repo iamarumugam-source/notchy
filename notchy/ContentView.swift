@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+            print("🔍 ContentView initialized") // Debug log in console
+        }
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("✅ Debug Window Visible")
+                            .padding()
+                            .border(Color.blue, width: 3)
+                    
         }
-        .padding()
     }
 }
 
